@@ -7,7 +7,7 @@ class UserController < ApplicationController
 
     def create_user
         @user = User.new(user_params)
-        
+        puts "creating user"
     end
 
      
