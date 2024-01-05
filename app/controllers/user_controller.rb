@@ -6,8 +6,13 @@ class UserController < ApplicationController
     validates :password, format: { with: /\A(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]+\z/, message: "should include at least one letter and one digit" }
 
     def create_user
-        @user = User.new(user_params)
-        
+    #     @user = User.new(user_params)
+    #   if @user.role = "admin"
+    #     @user.role_id = 1
+    #   else
+    #     @user.role_id = 2
+    #   end
+    #   @user.save
     end
 
      
