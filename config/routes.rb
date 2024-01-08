@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   root 'user#index'
 
-  post 'new_user' , to: "user#create_user"
+  post 'new_user' , to: 'user#create_user'
+
+  get 'login', to: 'user#login'
 
 end
