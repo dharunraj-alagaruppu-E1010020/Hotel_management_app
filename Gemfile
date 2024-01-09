@@ -17,6 +17,8 @@ gem "puma", ">= 5.0"
 # mysql dababase gem for Active Record 
 gem 'mysql2', "~>0.5.5"
 
+gem 'bcrypt', '~> 3.1.16'
+
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 
