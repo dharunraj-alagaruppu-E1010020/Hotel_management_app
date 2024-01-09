@@ -32,20 +32,17 @@ class UserController < ApplicationController
     end
 
     def login
-        user = User.find_by(phone_number: params[:phone_number])
+        user = User.find_by(phone_number: params[:phone_number] , password: params[:password])
 
-      if user && User.find_by(password: params[:password])
-
+      if user
         if user.role_id == Role.find_by(role: 'admin')&.id
             render json: { message: 'Admin login successful' }, status: :created
           else
             render json: { message: 'User login successful' }, status: :created
           end
       else
-        render json: { message: ' Invalid phone number or password' }, status: :created
-        
+        render json: { message: ' Invalid phone number or password' }, status: :unprocessable_entity
       end
-
     end
 
     private
