@@ -28,36 +28,3357 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 67ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 7876)
 
 
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('4361666860976504730', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4361666860976504730')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('4361666860976504730', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4361666860976504730')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('4361666860976504730', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+Migrating to RemoveroleIdFromrole (20240105115044)
+  [1m[36mActiveRecord::SchemaMigration Create (2.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240105115044')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4361666860976504730')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('4361666860976504730', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4361666860976504730')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2024-01-05 18:00:54 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+NoMethodError (undefined method `validates' for UserController:Class):
+  
+app/controllers/user_controller.rb:3:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-05 18:00:56 +0530
+  
+NoMethodError (undefined method `validates' for UserController:Class):
+  
+app/controllers/user_controller.rb:3:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-05 18:01:39 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 1863)
+
+
+  
+ActionView::MissingTemplate (Missing template user/application.html, application/application.html with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:9:in `index'
+Started GET "/" for ::1 at 2024-01-05 18:06:41 +0530
+  
+NoMethodError (undefined method `validates' for UserController:Class):
+  
+app/controllers/user_controller.rb:3:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-05 18:07:05 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1143)
+
+
+  
+ActionView::MissingTemplate (Missing template user/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/" for ::1 at 2024-01-05 18:07:28 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 681)
+
+
+  
+ActionView::MissingTemplate (Missing template user/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/" for ::1 at 2024-01-05 18:08:21 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 3423)
+
+
+  
+ActionView::MissingTemplate (Missing template user/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/" for ::1 at 2024-01-05 18:08:23 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 686)
+
+
+  
+ActionView::MissingTemplate (Missing template user/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/" for ::1 at 2024-01-05 18:09:59 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1082)
+
+
+  
+ActionView::MissingTemplate (Missing template user/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/index" for ::1 at 2024-01-05 18:10:36 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/index" for ::1 at 2024-01-05 18:10:37 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/index" for ::1 at 2024-01-05 18:11:25 +0530
+  
+SyntaxError (/Users/dalagaruppu/Documents/clone/config/routes.rb:10: syntax error, unexpected local variable or method, expecting `end' or dummy end
+  get "index" to: "user#index"
+              ^~
+):
+  
+config/routes.rb:10: syntax error, unexpected local variable or method, expecting `end' or dummy end
+Started GET "/index" for ::1 at 2024-01-05 18:11:36 +0530
+  
+SyntaxError (/Users/dalagaruppu/Documents/clone/config/routes.rb:10: syntax error, unexpected local variable or method, expecting `end' or dummy end
+  get "/index" to: "user#index"
+               ^~
+):
+  
+config/routes.rb:10: syntax error, unexpected local variable or method, expecting `end' or dummy end
+Started GET "/index" for ::1 at 2024-01-05 18:12:13 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1082)
+
+
+  
+ActionView::MissingTemplate (Missing template user/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/index" for ::1 at 2024-01-06 16:54:14 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms | Allocations: 681)
+
+
+  
+ActionView::MissingTemplate (Missing template user/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/index" for ::1 at 2024-01-06 16:54:15 +0530
+Started GET "/index" for ::1 at 2024-01-06 16:54:15 +0530
+Processing by UserController#index as HTML
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2323)
+
+
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2272)
+
+
+  
+ActionView::MissingTemplate (Missing template user/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:10:in `index'
+  
+ActionView::MissingTemplate (Missing template user/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:10:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('4361666860976504730', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+Migrating to InsertRolesData (20240107064813)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (15.8ms)[0m  [1m[32mINSERT INTO `roles` (`role_id`, `role`, `created_at`, `updated_at`) VALUES (NULL, 'admin', '2024-01-07 06:49:31.126755', '2024-01-07 06:49:31.126755')[0m
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (3.2ms)[0m  [1m[32mINSERT INTO `roles` (`role_id`, `role`, `created_at`, `updated_at`) VALUES (NULL, 'user', '2024-01-07 06:49:31.168451', '2024-01-07 06:49:31.168451')[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240107064813')[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('4361666860976504730')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` /* loading for pp */ LIMIT 11[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('4361666860976504730', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4361666860976504730')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('4361666860976504730', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+Migrating to RemoveRoleIdFromRoles (20240107065345)
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240107065345')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('4361666860976504730')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[35m (51.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS `hotel_management`[0m
+  [1m[35m (20.8ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4361666860976504730', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2024-01-07 07:43:13.573745', '2024-01-07 07:43:13.573747')[0m
+Migrating to CreateRoles (20240107074043)
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE `roles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `role` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240107074043')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4361666860976504730')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('4361666860976504730', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+Migrating to CreateUsers (20240107084118)
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `phone_number` varchar(255), `password` varchar(255), `is_active` tinyint(1), `role_id` bigint NOT NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, INDEX `index_users_on_role_id` (`role_id`), CONSTRAINT `fk_rails_642f17018b`
+FOREIGN KEY (`role_id`)
+  REFERENCES `roles` (`id`)
+)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240107084118')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4361666860976504730')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('4361666860976504730', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+Migrating to InsertRolesData (20240107084347)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (1.9ms)[0m  [1m[32mINSERT INTO `roles` (`role`, `created_at`, `updated_at`) VALUES ('admin', '2024-01-07 08:44:34.372038', '2024-01-07 08:44:34.372038')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (1.5ms)[0m  [1m[32mINSERT INTO `roles` (`role`, `created_at`, `updated_at`) VALUES ('user', '2024-01-07 08:44:34.377148', '2024-01-07 08:44:34.377148')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240107084347')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('4361666860976504730')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` /* loading for pp */ LIMIT 11[0m
+Started GET "/" for 127.0.0.1 at 2024-01-07 14:16:24 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | Allocations: 376)
+Completed 200 OK in 24ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 4269)
+
+
+Started GET "/" for ::1 at 2024-01-07 14:16:29 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 13)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 211)
+
+
+Started GET "/" for ::1 at 2024-01-07 19:02:11 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.3ms | Allocations: 13)
+Completed 200 OK in 9ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 210)
+
+
+Started GET "/" for ::1 at 2024-01-07 19:29:09 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 13)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 211)
+
+
+Started GET "/" for ::1 at 2024-01-07 19:37:48 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 13)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 206)
+
+
+Started GET "/" for ::1 at 2024-01-07 19:37:55 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 13)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 210)
+
+
+Started GET "/" for ::1 at 2024-01-07 19:39:04 +0530
   [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 376)
+Completed 200 OK in 22ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 4270)
+
+
+Started GET "/" for ::1 at 2024-01-07 19:39:07 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | Allocations: 13)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 211)
+
+
+Started GET "/" for ::1 at 2024-01-07 19:40:56 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | Allocations: 13)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 206)
+
+
+Started GET "/" for ::1 at 2024-01-07 19:41:30 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | Allocations: 13)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 210)
+
+
+Started GET "/" for ::1 at 2024-01-07 19:41:57 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 13)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 210)
+
+
+Started GET "/" for ::1 at 2024-01-07 19:42:49 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1508)
+
+
+  
+ActionView::MissingTemplate (Missing template user/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/" for ::1 at 2024-01-07 19:42:50 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 683)
+
+
+  
+ActionView::MissingTemplate (Missing template user/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/" for ::1 at 2024-01-07 19:43:11 +0530
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UserController):
+  
+actionpack (7.1.2) lib/abstract_controller/base.rb:155:in `process'
+actionview (7.1.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.0.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.8) lib/rack/etag.rb:29:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.2) lib/active_record/migration.rb:654:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.1) lib/puma/configuration.rb:272:in `call'
+puma (6.4.1) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.1) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.1) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.1) lib/puma/server.rb:464:in `process_client'
+puma (6.4.1) lib/puma/server.rb:245:in `block in run'
+puma (6.4.1) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/" for ::1 at 2024-01-07 19:43:59 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1082)
+
+
+  
+ActionView::MissingTemplate (Missing template user/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/" for ::1 at 2024-01-07 19:44:12 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1058)
+
+
+  
+ActionView::MissingTemplate (Missing template /index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/" for ::1 at 2024-01-07 19:47:01 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 999)
+
+
+  
+ActionView::MissingTemplate (Missing template /index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/" for ::1 at 2024-01-07 19:47:07 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 670)
+
+
+  
+ActionView::MissingTemplate (Missing template /index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/" for ::1 at 2024-01-07 19:48:21 +0530
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:10:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-07 19:51:49 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 999)
+
+
+  
+ActionView::MissingTemplate (Missing template /index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:11:in `index'
+Started GET "/" for ::1 at 2024-01-07 19:53:11 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 670)
+
+
+  
+ActionView::MissingTemplate (Missing template /index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:11:in `index'
+Started GET "/" for ::1 at 2024-01-07 19:53:28 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 670)
+
+
+  
+ActionView::MissingTemplate (Missing template /index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:11:in `index'
+Started GET "/" for ::1 at 2024-01-07 20:09:41 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 670)
+
+
+  
+ActionView::MissingTemplate (Missing template /index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:11:in `index'
+Started GET "/" for ::1 at 2024-01-07 20:09:42 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 670)
+
+
+  
+ActionView::MissingTemplate (Missing template /index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:11:in `index'
+Started GET "/" for ::1 at 2024-01-07 20:09:43 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 4374)
+
+
+  
+ActionView::MissingTemplate (Missing template /index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:11:in `index'
+Started GET "/" for ::1 at 2024-01-07 20:09:43 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 670)
+
+
+  
+ActionView::MissingTemplate (Missing template /index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:11:in `index'
+Started GET "/" for ::1 at 2024-01-07 20:10:24 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 670)
+
+
+  
+ActionView::MissingTemplate (Missing template /index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/dalagaruppu/Documents/clone/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/views"
+  * "/Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
+):
+  
+app/controllers/user_controller.rb:11:in `index'
+Started GET "/" for ::1 at 2024-01-07 20:15:47 +0530
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  Rendered user/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 91)
+  Rendered layout layouts/application.html.erb (Duration: 365.9ms | Allocations: 92782)
+Completed 200 OK in 371ms (Views: 369.8ms | ActiveRecord: 0.0ms | Allocations: 93681)
+
+
+Started GET "/" for ::1 at 2024-01-07 20:16:03 +0530
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  Rendered user/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 3924)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.0ms | Allocations: 4156)
+
+
+Started GET "/" for ::1 at 2024-01-07 20:16:04 +0530
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  Rendered user/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1419)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 1651)
+
+
+Started POST "/new_user" for ::1 at 2024-01-07 20:23:42 +0530
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:14:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/new_user" for ::1 at 2024-01-07 20:26:11 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"Dharunraj", "phone_number"=>"9361320511", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms | Allocations: 468)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.1.2) lib/action_controller/metal/request_forgery_protection.rb:293:in `handle_unverified_request'
+actionpack (7.1.2) lib/action_controller/metal/request_forgery_protection.rb:388:in `handle_unverified_request'
+actionpack (7.1.2) lib/action_controller/metal/request_forgery_protection.rb:377:in `verify_authenticity_token'
+activesupport (7.1.2) lib/active_support/callbacks.rb:403:in `block in make_lambda'
+activesupport (7.1.2) lib/active_support/callbacks.rb:202:in `block (2 levels) in halting'
+actionpack (7.1.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.1.2) lib/active_support/callbacks.rb:203:in `block in halting'
+activesupport (7.1.2) lib/active_support/callbacks.rb:598:in `block in invoke_before'
+activesupport (7.1.2) lib/active_support/callbacks.rb:598:in `each'
+activesupport (7.1.2) lib/active_support/callbacks.rb:598:in `invoke_before'
+activesupport (7.1.2) lib/active_support/callbacks.rb:119:in `block in run_callbacks'
+activesupport (7.1.2) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.2) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.2) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.2) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.0.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.8) lib/rack/etag.rb:29:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:43:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.2) lib/active_record/migration.rb:654:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.1) lib/puma/configuration.rb:272:in `call'
+puma (6.4.1) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.1) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.1) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.1) lib/puma/server.rb:464:in `process_client'
+puma (6.4.1) lib/puma/server.rb:245:in `block in run'
+puma (6.4.1) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/new_user" for ::1 at 2024-01-07 20:29:30 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"Dharunraj", "phone_number"=>"9361320511", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 437)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.1.2) lib/action_controller/metal/request_forgery_protection.rb:293:in `handle_unverified_request'
+actionpack (7.1.2) lib/action_controller/metal/request_forgery_protection.rb:388:in `handle_unverified_request'
+actionpack (7.1.2) lib/action_controller/metal/request_forgery_protection.rb:377:in `verify_authenticity_token'
+activesupport (7.1.2) lib/active_support/callbacks.rb:403:in `block in make_lambda'
+activesupport (7.1.2) lib/active_support/callbacks.rb:202:in `block (2 levels) in halting'
+actionpack (7.1.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.1.2) lib/active_support/callbacks.rb:203:in `block in halting'
+activesupport (7.1.2) lib/active_support/callbacks.rb:598:in `block in invoke_before'
+activesupport (7.1.2) lib/active_support/callbacks.rb:598:in `each'
+activesupport (7.1.2) lib/active_support/callbacks.rb:598:in `invoke_before'
+activesupport (7.1.2) lib/active_support/callbacks.rb:119:in `block in run_callbacks'
+activesupport (7.1.2) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.2) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.2) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.2) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.0.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.8) lib/rack/etag.rb:29:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:43:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.2) lib/active_record/migration.rb:654:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.1) lib/puma/configuration.rb:272:in `call'
+puma (6.4.1) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.1) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.1) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.1) lib/puma/server.rb:464:in `process_client'
+puma (6.4.1) lib/puma/server.rb:245:in `block in run'
+puma (6.4.1) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/new_user" for ::1 at 2024-01-07 20:30:44 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"Dharunraj", "phone_number"=>"9361320511", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 645)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.1.2) lib/action_controller/metal/request_forgery_protection.rb:293:in `handle_unverified_request'
+actionpack (7.1.2) lib/action_controller/metal/request_forgery_protection.rb:388:in `handle_unverified_request'
+actionpack (7.1.2) lib/action_controller/metal/request_forgery_protection.rb:377:in `verify_authenticity_token'
+activesupport (7.1.2) lib/active_support/callbacks.rb:403:in `block in make_lambda'
+activesupport (7.1.2) lib/active_support/callbacks.rb:202:in `block (2 levels) in halting'
+actionpack (7.1.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.1.2) lib/active_support/callbacks.rb:203:in `block in halting'
+activesupport (7.1.2) lib/active_support/callbacks.rb:598:in `block in invoke_before'
+activesupport (7.1.2) lib/active_support/callbacks.rb:598:in `each'
+activesupport (7.1.2) lib/active_support/callbacks.rb:598:in `invoke_before'
+activesupport (7.1.2) lib/active_support/callbacks.rb:119:in `block in run_callbacks'
+activesupport (7.1.2) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.2) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.2) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.2) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.0.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.8) lib/rack/etag.rb:29:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:43:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.2) lib/active_record/migration.rb:654:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.1) lib/puma/configuration.rb:272:in `call'
+puma (6.4.1) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.1) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.1) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.1) lib/puma/server.rb:464:in `process_client'
+puma (6.4.1) lib/puma/server.rb:245:in `block in run'
+puma (6.4.1) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/new_user" for ::1 at 2024-01-07 20:33:43 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"Dharunraj", "phone_number"=>"9361320511", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Load (1.2ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:25:in `create_user'
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:25:in `create_user'
+  [1m[36mUser Create (3.8ms)[0m  [1m[32mINSERT INTO `users` (`name`, `phone_number`, `password`, `is_active`, `role_id`, `created_at`, `updated_at`) VALUES ('Dharunraj', '9361320511', '1234567890Dh', NULL, 2, '2024-01-07 15:03:43.833685', '2024-01-07 15:03:43.833685')[0m
+  ↳ app/controllers/user_controller.rb:25:in `create_user'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/user_controller.rb:25:in `create_user'
+Completed 201 Created in 190ms (Views: 0.3ms | ActiveRecord: 19.8ms | Allocations: 34465)
+
+
+Started POST "/new_user" for ::1 at 2024-01-07 20:36:57 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"mohan", "phone_number"=>"9361320512", "password"=>"[FILTERED]", "role"=>"admin"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'admin' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:25:in `create_user'
+  [1m[36mRole Load (0.8ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:25:in `create_user'
+  [1m[36mUser Create (2.5ms)[0m  [1m[32mINSERT INTO `users` (`name`, `phone_number`, `password`, `is_active`, `role_id`, `created_at`, `updated_at`) VALUES ('mohan', '9361320512', '1234567890Mo', NULL, 1, '2024-01-07 15:06:57.195736', '2024-01-07 15:06:57.195736')[0m
+  ↳ app/controllers/user_controller.rb:25:in `create_user'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/user_controller.rb:25:in `create_user'
+Completed 201 Created in 15ms (Views: 0.1ms | ActiveRecord: 5.2ms | Allocations: 2832)
+
+
+Started POST "/new_user" for ::1 at 2024-01-07 20:40:39 +0530
+  
+NoMethodError (undefined method `validates' for UserController:Class):
+  
+app/controllers/user_controller.rb:4:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started POST "/new_user" for ::1 at 2024-01-07 20:42:41 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"mohan1", "phone_number"=>"9361320512", "password"=>"[FILTERED]", "role"=>"admin"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Load (1.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'admin' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:14:in `create_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:17:in `create_user'
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:17:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:17:in `create_user'
+Completed 422 Unprocessable Entity in 59ms (Views: 0.4ms | ActiveRecord: 16.4ms | Allocations: 11728)
+
+
+Started POST "/new_user" for ::1 at 2024-01-07 20:43:14 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"mohan", "phone_number"=>"93613205127878", "password"=>"[FILTERED]", "role"=>"admin"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'admin' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:14:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:17:in `create_user'
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:17:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:17:in `create_user'
+Completed 422 Unprocessable Entity in 9ms (Views: 0.2ms | ActiveRecord: 1.9ms | Allocations: 2964)
+
+
+Started POST "/new_user" for ::1 at 2024-01-07 20:43:21 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"mohan", "phone_number"=>"936132051a", "password"=>"[FILTERED]", "role"=>"admin"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Load (0.7ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'admin' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:14:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:17:in `create_user'
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:17:in `create_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:17:in `create_user'
+Completed 422 Unprocessable Entity in 10ms (Views: 0.1ms | ActiveRecord: 2.0ms | Allocations: 2943)
+
+
+Started POST "/new_user" for ::1 at 2024-01-07 20:43:50 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"mohan", "phone_number"=>"9361320514", "password"=>"[FILTERED]", "role"=>"admin"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'admin' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:14:in `create_user'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:17:in `create_user'
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:17:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:17:in `create_user'
+Completed 422 Unprocessable Entity in 8ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 3183)
+
+
+Started GET "/" for ::1 at 2024-01-07 22:47:37 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dalagaruppu/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 376)
+Completed 200 OK in 22ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 4270)
+
+
+Started GET "/" for ::1 at 2024-01-07 22:48:42 +0530
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  Rendered user/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 91)
+  Rendered layout layouts/application.html.erb (Duration: 97.1ms | Allocations: 34589)
+Completed 200 OK in 101ms (Views: 100.6ms | ActiveRecord: 0.0ms | Allocations: 35556)
+
+
+Started POST "/new_user" for ::1 at 2024-01-07 23:41:01 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"mohan", "phone_number"=>"9361320514", "password"=>"[FILTERED]", "role"=>"admi"}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 4.8ms | Allocations: 19070)
+
+
+  
+NoMethodError (undefined method `is_present_role?' for #<UserController:0x00000000011120>):
+  
+app/controllers/user_controller.rb:15:in `create_user'
+Started POST "/new_user" for ::1 at 2024-01-07 23:45:14 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"mohan", "phone_number"=>"9361320514", "password"=>"[FILTERED]", "role"=>"admi"}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 3.7ms | Allocations: 5294)
+
+
+  
+NameError (undefined local variable or method `roles' for Role:Class):
+  
+app/models/role.rb:3:in `is_present_role?'
+app/controllers/user_controller.rb:15:in `create_user'
+Started POST "/new_user" for ::1 at 2024-01-07 23:49:43 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"mohan", "phone_number"=>"9361320514", "password"=>"[FILTERED]", "role"=>"admi"}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 4.5ms | Allocations: 5257)
+
+
+  
+NoMethodError (undefined method `include?' for nil:NilClass):
+  
+app/models/role.rb:3:in `is_present_role?'
+app/controllers/user_controller.rb:15:in `create_user'
+Started POST "/new_user" for ::1 at 2024-01-07 23:58:25 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"mohan", "phone_number"=>"9361320514", "password"=>"[FILTERED]", "role"=>"admi"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (3.3ms)[0m  [1m[34mSELECT `name` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 5.7ms | Allocations: 7466)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'name' in 'field list'):
+  
+Started POST "/new_user" for ::1 at 2024-01-08 00:00:11 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"srik", "phone_number"=>"9361320519", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.4ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:14:in `create_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:19:in `create_user'
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:19:in `create_user'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO `users` (`name`, `phone_number`, `password`, `is_active`, `role_id`, `created_at`, `updated_at`) VALUES ('srik', '9361320519', '1234567890Dh', NULL, 2, '2024-01-07 18:30:11.951959', '2024-01-07 18:30:11.951959')[0m
+  ↳ app/controllers/user_controller.rb:19:in `create_user'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/user_controller.rb:19:in `create_user'
+Completed 201 Created in 52ms (Views: 0.2ms | ActiveRecord: 12.2ms | Allocations: 16447)
+
+
+Started POST "/new_user" for ::1 at 2024-01-08 00:00:20 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"srik", "phone_number"=>"9361320519", "password"=>"[FILTERED]", "role"=>"use"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.5ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.5ms | Allocations: 941)
+
+
+  
+StandardError (Role 'use' not found):
+  
+app/controllers/user_controller.rb:17:in `create_user'
+Started POST "/new_user" for ::1 at 2024-01-08 00:01:40 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"srik", "phone_number"=>"9361320519", "password"=>"[FILTERED]", "role"=>"use"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.4ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:19:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:19:in `create_user'
+Completed 500 Internal Server Error in 28ms (Views: 0.2ms | ActiveRecord: 12.0ms | Allocations: 8908)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...); return".):
+  
+app/controllers/user_controller.rb:22:in `create_user'
+Started POST "/new_user" for ::1 at 2024-01-08 00:02:16 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"srik", "phone_number"=>"9361320519", "password"=>"[FILTERED]", "role"=>"use"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.4ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:19:in `create_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:19:in `create_user'
+Completed 500 Internal Server Error in 24ms (Views: 0.2ms | ActiveRecord: 10.3ms | Allocations: 8581)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...); return".):
+  
+app/controllers/user_controller.rb:22:in `create_user'
+Started POST "/new_user" for ::1 at 2024-01-08 00:03:39 +0530
+  
+SyntaxError (/Users/dalagaruppu/Documents/clone/app/controllers/user_controller.rb:26: syntax error, unexpected end-of-input):
+  
+app/controllers/user_controller.rb:26: syntax error, unexpected end-of-input
+Started POST "/new_user" for ::1 at 2024-01-08 00:03:51 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"srik", "phone_number"=>"9361320519", "password"=>"[FILTERED]", "role"=>"use"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.6ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:19:in `create_user'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:19:in `create_user'
+Completed 422 Unprocessable Entity in 28ms (Views: 0.2ms | ActiveRecord: 10.6ms | Allocations: 8252)
+
+
+Started POST "/new_user" for ::1 at 2024-01-08 00:07:35 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"Gopi", "phone_number"=>"9361320518", "password"=>"[FILTERED]", "role"=>"admin"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.4ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'admin' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:16:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:21:in `create_user'
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:21:in `create_user'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO `users` (`name`, `phone_number`, `password`, `is_active`, `role_id`, `created_at`, `updated_at`) VALUES ('Gopi', '9361320518', '1234567890Go', NULL, 1, '2024-01-07 18:37:36.160861', '2024-01-07 18:37:36.160861')[0m
+  ↳ app/controllers/user_controller.rb:21:in `create_user'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/user_controller.rb:21:in `create_user'
+Completed 500 Internal Server Error in 37ms (Views: 0.2ms | ActiveRecord: 10.7ms | Allocations: 12239)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...); return".):
+  
+app/controllers/user_controller.rb:22:in `create_user'
+Started POST "/new_user" for ::1 at 2024-01-08 00:13:03 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"Joe", "phone_number"=>"9361320515", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.5ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:16:in `create_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:21:in `create_user'
+  [1m[36mRole Load (0.8ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:21:in `create_user'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO `users` (`name`, `phone_number`, `password`, `is_active`, `role_id`, `created_at`, `updated_at`) VALUES ('Joe', '9361320515', '1234567890Go', NULL, 2, '2024-01-07 18:43:04.104911', '2024-01-07 18:43:04.104911')[0m
+  ↳ app/controllers/user_controller.rb:21:in `create_user'
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/user_controller.rb:21:in `create_user'
+Completed 500 Internal Server Error in 52ms (Views: 0.2ms | ActiveRecord: 6.5ms | Allocations: 11719)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...); return".):
+  
+app/controllers/user_controller.rb:22:in `create_user'
+Started GET "/" for ::1 at 2024-01-08 14:50:52 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  Rendered user/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 75.8ms | Allocations: 33474)
+Completed 200 OK in 101ms (Views: 95.0ms | ActiveRecord: 0.0ms | Allocations: 37510)
+
+
+Started GET "/" for ::1 at 2024-01-08 14:50:54 +0530
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  Rendered user/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 2275)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 2511)
+
+
+Started POST "/new_user" for ::1 at 2024-01-08 15:12:11 +0530
+  
+SyntaxError (/Users/dalagaruppu/Documents/clone/app/controllers/user_controller.rb:22: syntax error, unexpected integer literal, expecting literal content or terminator or tSTRING_DBEG or tSTRING_DVAR
+...d successfully' }, status: :201
+...                            ^~~
+):
+  
+app/controllers/user_controller.rb:22: syntax error, unexpected integer literal, expecting literal content or terminator or tSTRING_DBEG or tSTRING_DVAR
+Started POST "/new_user" for ::1 at 2024-01-08 15:12:52 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"barath", "phone_number"=>"9361320516", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.4ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.8ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:16:in `create_user'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:21:in `create_user'
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:21:in `create_user'
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `phone_number`, `password`, `is_active`, `role_id`, `created_at`, `updated_at`) VALUES ('barath', '9361320516', '1234567890Ba', NULL, 2, '2024-01-08 09:42:52.746480', '2024-01-08 09:42:52.746480')[0m
+  ↳ app/controllers/user_controller.rb:21:in `create_user'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/user_controller.rb:21:in `create_user'
+Completed 201 Created in 128ms (Views: 0.2ms | ActiveRecord: 14.2ms | Allocations: 31503)
+
+
+Started POST "/new_user" for ::1 at 2024-01-08 15:14:42 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"barath", "phone_number"=>"", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.6ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:16:in `create_user'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:21:in `create_user'
+  [1m[36mRole Load (0.8ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:21:in `create_user'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:21:in `create_user'
+Completed 422 Unprocessable Entity in 14ms (Views: 0.1ms | ActiveRecord: 3.0ms | Allocations: 3667)
+
+
+Started GET "/" for ::1 at 2024-01-08 15:31:05 +0530
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/user_controller.rb:6:in `index'
+Completed 200 OK in 22ms (Views: 17.6ms | ActiveRecord: 0.7ms | Allocations: 5342)
+
+
+Started POST "/new_user" for ::1 at 2024-01-08 17:17:41 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"barath", "phone_number"=>"df", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.5ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:18:in `create_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+Completed 422 Unprocessable Entity in 61ms (Views: 0.3ms | ActiveRecord: 2.9ms | Allocations: 11364)
+
+
+Started GET "/" for ::1 at 2024-01-08 17:40:02 +0530
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/user_controller.rb:6:in `index'
+Completed 200 OK in 33ms (Views: 25.5ms | ActiveRecord: 1.0ms | Allocations: 5420)
+
+
+Started POST "/new_user" for ::1 at 2024-01-08 17:40:21 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"barath", "phone_number"=>"", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (2.6ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.9ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:18:in `create_user'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+  [1m[36mRole Load (2.2ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 8.9ms | Allocations: 7059)
+
+
+  
+NameError (undefined local variable or method `phone' for #<User id: nil, name: "barath", phone_number: "", password: [FILTERED], is_active: nil, role_id: 2, created_at: nil, updated_at: nil>):
+  
+app/models/user.rb:14:in `required_callback'
+app/controllers/user_controller.rb:23:in `create_user'
+Started POST "/new_user" for ::1 at 2024-01-08 17:40:34 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"barath", "phone_number"=>"", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (1.1ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:18:in `create_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+Completed 422 Unprocessable Entity in 39ms (Views: 0.2ms | ActiveRecord: 15.4ms | Allocations: 11933)
+
+
+Started POST "/new_user" for ::1 at 2024-01-08 17:40:57 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"barath", "phone_number"=>"", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.5ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.9ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:18:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+Completed 422 Unprocessable Entity in 37ms (Views: 0.2ms | ActiveRecord: 9.4ms | Allocations: 11952)
+
+
+Started POST "/new_user" for ::1 at 2024-01-08 17:41:24 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"barath", "phone_number"=>"", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.4ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:18:in `create_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+  [1m[36mRole Load (0.7ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+Completed 422 Unprocessable Entity in 12ms (Views: 0.1ms | ActiveRecord: 2.1ms | Allocations: 3354)
+
+
+Started POST "/new_user" for ::1 at 2024-01-08 17:42:19 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"barath", "phone_number"=>"", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.7ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:18:in `create_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+Completed 422 Unprocessable Entity in 34ms (Views: 0.2ms | ActiveRecord: 8.6ms | Allocations: 11869)
+
+
+Started POST "/new_user" for ::1 at 2024-01-08 17:42:52 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"barath", "phone_number"=>"", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.4ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:18:in `create_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+Completed 422 Unprocessable Entity in 37ms (Views: 0.2ms | ActiveRecord: 10.6ms | Allocations: 11867)
+
+
+Started POST "/new_user" for ::1 at 2024-01-08 17:43:22 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"barath", "phone_number"=>"", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.5ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:18:in `create_user'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+Completed 422 Unprocessable Entity in 13ms (Views: 0.1ms | ActiveRecord: 2.7ms | Allocations: 3351)
+
+
+Started POST "/new_user" for ::1 at 2024-01-08 17:45:14 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"barath", "phone_number"=>"", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 1440)
+
+
+  
+NoMethodError (undefined method `skip_before_action' for User:Class):
+  
+app/models/user.rb:5:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/user_controller.rb:11:in `create_user'
+Started POST "/new_user" for ::1 at 2024-01-08 17:46:23 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"barath", "phone_number"=>"", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 1439)
+
+
+  
+NoMethodError (undefined method `skip_before_action' for User:Class):
+  
+app/models/user.rb:5:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/user_controller.rb:11:in `create_user'
+Started POST "/new_user" for ::1 at 2024-01-08 17:46:58 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"barath", "phone_number"=>"", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.5ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:18:in `create_user'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:23:in `create_user'
+Completed 422 Unprocessable Entity in 38ms (Views: 0.2ms | ActiveRecord: 8.9ms | Allocations: 11909)
+
+
+Started POST "/new_user" for ::1 at 2024-01-08 17:53:54 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"barath", "phone_number"=>"", "password"=>"[FILTERED]", "role"=>"user"}
+  [1m[36mRole Pluck (0.5ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:17:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+Completed 422 Unprocessable Entity in 49ms (Views: 0.2ms | ActiveRecord: 2.9ms | Allocations: 11293)
+
+
+Started POST "/new_user" for ::1 at 2024-01-08 17:54:01 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"barath", "phone_number"=>"", "password"=>"[FILTERED]", "role"=>"user"}
+  [1m[36mRole Pluck (0.5ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:17:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+  [1m[36mRole Load (1.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+Completed 422 Unprocessable Entity in 13ms (Views: 0.1ms | ActiveRecord: 3.3ms | Allocations: 3324)
+
+
+Started POST "/new_user" for ::1 at 2024-01-08 17:54:48 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"barath", "phone_number"=>"", "password"=>"[FILTERED]", "role"=>"user"}
+  [1m[36mRole Pluck (0.3ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.7ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:17:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+Completed 422 Unprocessable Entity in 33ms (Views: 0.2ms | ActiveRecord: 10.2ms | Allocations: 11739)
+
+
+Started POST "/new_user" for ::1 at 2024-01-08 17:54:58 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"barath", "phone_number"=>"", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.4ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:17:in `create_user'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+Completed 422 Unprocessable Entity in 30ms (Views: 0.2ms | ActiveRecord: 8.6ms | Allocations: 11844)
+
+
+Started POST "/new_user" for ::1 at 2024-01-08 17:55:03 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"barath", "phone_number"=>"", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.4ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:17:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+Completed 422 Unprocessable Entity in 9ms (Views: 0.1ms | ActiveRecord: 1.8ms | Allocations: 3351)
+
+
+Started POST "/new_user" for ::1 at 2024-01-08 17:55:14 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"barath", "phone_number"=>"", "password"=>"[FILTERED]", "role"=>"user"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.4ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'user' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:17:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO `users` (`name`, `phone_number`, `password`, `is_active`, `role_id`, `created_at`, `updated_at`) VALUES ('barath', '', '1234567890Ba', NULL, 2, '2024-01-08 12:25:14.766100', '2024-01-08 12:25:14.766100')[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/user_controller.rb:22:in `create_user'
+Completed 201 Created in 36ms (Views: 0.2ms | ActiveRecord: 11.0ms | Allocations: 11645)
+
+
+Started GET "/" for ::1 at 2024-01-08 18:56:49 +0530
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/user_controller.rb:6:in `index'
+Completed 200 OK in 32ms (Views: 23.2ms | ActiveRecord: 1.0ms | Allocations: 5450)
+
+
+Started POST "/new_user" for ::1 at 2024-01-08 19:43:46 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+NoMethodError (undefined method `before_create' for UserController:Class):
+  
+app/controllers/user_controller.rb:3:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started POST "/new_user" for ::1 at 2024-01-08 19:44:29 +0530
+  
+NoMethodError (undefined method `before_validations' for UserController:Class):
+  
+app/controllers/user_controller.rb:3:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started POST "/new_user" for ::1 at 2024-01-08 19:46:13 +0530
+  
+NoMethodError (undefined method `before_validations' for UserController:Class):
+  
+app/controllers/user_controller.rb:3:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started POST "/new_user" for ::1 at 2024-01-08 19:47:52 +0530
+  
+NoMethodError (undefined method `before_validations' for UserController:Class):
+  
+app/controllers/user_controller.rb:3:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started POST "/new_user" for ::1 at 2024-01-08 19:48:01 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"sasi", "phone_number"=>"9600678232", "password"=>"[FILTERED]", "role"=>"admin"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (0.7ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'admin' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:34:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:41:in `create_user'
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:41:in `create_user'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO `users` (`name`, `phone_number`, `password`, `is_active`, `role_id`, `created_at`, `updated_at`) VALUES ('sasi', '9600678232', '1234567890Ba', NULL, 1, '2024-01-08 14:18:01.782680', '2024-01-08 14:18:01.782680')[0m
+  ↳ app/controllers/user_controller.rb:41:in `create_user'
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/user_controller.rb:41:in `create_user'
+Completed 201 Created in 141ms (Views: 0.9ms | ActiveRecord: 14.4ms | Allocations: 32499)
+
+
+Started GET "/" for ::1 at 2024-01-08 19:48:48 +0530
+  
+NoMethodError (undefined method `before_validations' for UserController:Class):
+  
+app/controllers/user_controller.rb:3:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-08 19:48:49 +0530
+  
+NoMethodError (undefined method `before_validations' for UserController:Class):
+  
+app/controllers/user_controller.rb:3:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-08 19:48:52 +0530
+  
+NoMethodError (undefined method `before_validations' for UserController:Class):
+  
+app/controllers/user_controller.rb:3:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-08 19:49:00 +0530
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/user_controller.rb:21:in `index'
+Completed 200 OK in 14ms (Views: 6.6ms | ActiveRecord: 3.5ms | Allocations: 5818)
+
+
+Started GET "/" for ::1 at 2024-01-08 19:49:13 +0530
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/user_controller.rb:21:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.4ms | Allocations: 1109)
+
+
+Started GET "/" for ::1 at 2024-01-08 19:49:27 +0530
+  
+NoMethodError (undefined method `before_validations' for UserController:Class):
+  
+app/controllers/user_controller.rb:3:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-08 19:51:24 +0530
+  
+NoMethodError (undefined method `before_validations' for UserController:Class):
+  
+app/controllers/user_controller.rb:6:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started POST "/new_user" for ::1 at 2024-01-08 19:53:01 +0530
+  
+NoMethodError (undefined method `before_validations' for UserController:Class):
+  
+app/controllers/user_controller.rb:6:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-08 19:55:40 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+NoMethodError (undefined method `before_validations' for UserController:Class):
+  
+app/controllers/user_controller.rb:6:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-08 19:56:13 +0530
+  
+NoMethodError (undefined method `before_name_validations' for UserController:Class):
+  
+app/controllers/user_controller.rb:6:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-08 19:57:41 +0530
+  
+NoMethodError (undefined method `before_name_validations' for UserController:Class):
+  
+app/controllers/user_controller.rb:6:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-08 19:59:49 +0530
+  
+NoMethodError (undefined method `before_name_validations' for UserController:Class):
+  
+app/controllers/user_controller.rb:6:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-08 19:59:51 +0530
+  
+NoMethodError (undefined method `before_name_validations' for UserController:Class):
+  
+app/controllers/user_controller.rb:6:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-08 20:00:00 +0530
+  
+NoMethodError (undefined method `before_name_validations' for UserController:Class):
+  
+app/controllers/user_controller.rb:6:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-08 20:00:16 +0530
+  
+NoMethodError (undefined method `before_name_validations' for UserController:Class):
+  
+app/controllers/user_controller.rb:6:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-08 20:09:11 +0530
+  
+NoMethodError (undefined method `before_filter' for UserController:Class):
+  
+app/controllers/user_controller.rb:6:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-08 20:09:45 +0530
+  
+NoMethodError (undefined method `before_filter' for UserController:Class):
+  
+app/controllers/user_controller.rb:6:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-08 20:09:46 +0530
+  
+NoMethodError (undefined method `before_filter' for UserController:Class):
+  
+app/controllers/user_controller.rb:6:in `<class:UserController>'
+app/controllers/user_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-08 20:11:26 +0530
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/user_controller.rb:25:in `index'
+Completed 200 OK in 81ms (Views: 44.8ms | ActiveRecord: 5.0ms | Allocations: 21752)
+
+
+Started GET "/" for ::1 at 2024-01-08 20:13:24 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 550)
+
+
+  
+NameError (undefined local variable or method `user' for #<UserController:0x00000000022358>):
+  
+app/controllers/user_controller.rb:12:in `validate_name'
+Started GET "/" for ::1 at 2024-01-08 20:14:47 +0530
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/user_controller.rb:22:in `index'
+Completed 500 Internal Server Error in 14ms (Views: 6.6ms | ActiveRecord: 3.5ms | Allocations: 6187)
+
+
+  
+NameError (undefined local variable or method `user' for #<UserController:0x00000000025918>):
+  
+app/controllers/user_controller.rb:17:in `validate_password'
+Started GET "/" for ::1 at 2024-01-08 20:15:31 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 520)
+
+
+  
+NoMethodError (super: no superclass method `validate_name' for #<UserController:0x00000000028ed8>):
+  
+app/controllers/user_controller.rb:9:in `validate_name'
+Started GET "/" for ::1 at 2024-01-08 20:16:25 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 478)
+
+
+  
+NoMethodError (super: no superclass method `validate_name' for #<UserController:0x00000000029248>):
+  
+app/controllers/user_controller.rb:9:in `validate_name'
+Started GET "/" for ::1 at 2024-01-08 22:25:31 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 515)
+
+
+  
+NameError (undefined local variable or method `user' for #<UserController:0x0000000002c830>):
+  
+app/controllers/user_controller.rb:8:in `validate_name'
+Started GET "/" for ::1 at 2024-01-08 22:29:54 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 514)
+
+
+  
+RuntimeError (Name can't be empty):
+  
+app/controllers/user_controller.rb:8:in `validate_name'
+Started GET "/" for ::1 at 2024-01-08 22:30:39 +0530
+Started GET "/" for ::1 at 2024-01-08 22:30:40 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 508)
+
+
+  
+RuntimeError ( Name can't be empty ):
+  
+app/controllers/user_controller.rb:8:in `validate_name'
+Started GET "/" for ::1 at 2024-01-08 22:30:40 +0530
+Started GET "/" for ::1 at 2024-01-08 22:30:40 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 589)
+
+
+  
+RuntimeError ( Name can't be empty ):
+  
+app/controllers/user_controller.rb:8:in `validate_name'
+Started GET "/" for ::1 at 2024-01-08 22:30:40 +0530
+Started GET "/" for ::1 at 2024-01-08 22:30:41 +0530
+Processing by UserController#index as HTML
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 7611)
+
+
+  
+RuntimeError ( Name can't be empty ):
+  
+app/controllers/user_controller.rb:8:in `validate_name'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 7677)
+
+
+  
+RuntimeError ( Name can't be empty ):
+  
+app/controllers/user_controller.rb:8:in `validate_name'
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3175)
+
+
+  
+RuntimeError ( Name can't be empty ):
+  
+app/controllers/user_controller.rb:8:in `validate_name'
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 12811)
+
+
+  
+RuntimeError ( Name can't be empty ):
+  
+app/controllers/user_controller.rb:8:in `validate_name'
+Started GET "/" for ::1 at 2024-01-08 22:31:51 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1341)
+
+
+  
+RuntimeError ( Name can't be empty ):
+  
+app/controllers/user_controller.rb:8:in `validate_name'
+Started GET "/" for ::1 at 2024-01-08 22:31:52 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 473)
+
+
+  
+RuntimeError ( Name can't be empty ):
+  
+app/controllers/user_controller.rb:8:in `validate_name'
+Started GET "/" for ::1 at 2024-01-08 22:34:29 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 788)
+
+
+  
+NameError (undefined local variable or method `user' for #<UserController:0x0000000000e0b0>):
+  
+app/controllers/user_controller.rb:15:in `rescue in validate_name'
+app/controllers/user_controller.rb:11:in `validate_name'
+Started GET "/" for ::1 at 2024-01-08 22:37:31 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 740)
+
+
+  
+NameError (undefined local variable or method `user' for #<UserController:0x0000000000e470>):
+  
+app/controllers/user_controller.rb:15:in `rescue in validate_name'
+app/controllers/user_controller.rb:11:in `validate_name'
+Started GET "/" for ::1 at 2024-01-08 22:37:57 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 775)
+
+
+  
+RuntimeError (Phone number can't be empty):
+  
+app/controllers/user_controller.rb:20:in `validate_phone_number'
+Started GET "/" for ::1 at 2024-01-09 00:58:35 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 735)
+
+
+  
+RuntimeError (Phone number can't be empty):
+  
+app/controllers/user_controller.rb:20:in `validate_phone_number'
+Started GET "/" for ::1 at 2024-01-09 00:58:35 +0530
+Started GET "/" for ::1 at 2024-01-09 00:58:35 +0530
+Processing by UserController#index as HTML
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2094)
+
+
+  
+RuntimeError (Phone number can't be empty):
+  
+app/controllers/user_controller.rb:20:in `validate_phone_number'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3166)
+
+
+  
+RuntimeError (Phone number can't be empty):
+  
+app/controllers/user_controller.rb:20:in `validate_phone_number'
+Started GET "/" for ::1 at 2024-01-09 00:58:36 +0530
+Started GET "/" for ::1 at 2024-01-09 00:58:36 +0530
+Processing by UserController#index as HTML
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 11523)
+
+
+  
+RuntimeError (Phone number can't be empty):
+  
+app/controllers/user_controller.rb:20:in `validate_phone_number'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 9001)
+
+
+  
+RuntimeError (Phone number can't be empty):
+  
+app/controllers/user_controller.rb:20:in `validate_phone_number'
+Started GET "/" for ::1 at 2024-01-09 00:58:37 +0530
+Started GET "/" for ::1 at 2024-01-09 00:58:37 +0530
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1634)
+
+
+  
+RuntimeError (Phone number can't be empty):
+  
+app/controllers/user_controller.rb:20:in `validate_phone_number'
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 3726)
+
+
+  
+RuntimeError (Phone number can't be empty):
+  
+app/controllers/user_controller.rb:20:in `validate_phone_number'
+Started GET "/" for ::1 at 2024-01-09 01:00:14 +0530
+Processing by UserController#index as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 512)
+
+
+  
+ActiveRecord::RecordNotFound (ActiveRecord::RecordNotFound):
+  
+app/controllers/user_controller.rb:12:in `validate_name'
+Started GET "/" for ::1 at 2024-01-09 01:07:44 +0530
+Processing by UserController#index as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 504)
+
+
+  
+ActiveRecord::RecordNotFound (ActiveRecord::RecordNotFound):
+  
+app/controllers/user_controller.rb:42:in `validate_name'
+Started POST "/new_user" for ::1 at 2024-01-09 01:11:12 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"sasi", "phone_number"=>"9600678232", "password"=>"[FILTERED]", "role"=>"admin"}
+Can't verify CSRF token authenticity.
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 530)
+
+
+  
+ActiveRecord::RecordNotFound (ActiveRecord::RecordNotFound):
+  
+app/controllers/user_controller.rb:42:in `validate_name'
+Started GET "/" for ::1 at 2024-01-09 01:11:28 +0530
+Processing by UserController#index as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 468)
+
+
+  
+ActiveRecord::RecordNotFound (ActiveRecord::RecordNotFound):
+  
+app/controllers/user_controller.rb:42:in `validate_name'
+Started GET "/" for ::1 at 2024-01-09 01:13:43 +0530
+Processing by UserController#index as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 506)
+
+
+  
+ActiveRecord::RecordNotFound (ActiveRecord::RecordNotFound):
+  
+app/controllers/user_controller.rb:48:in `validate_phone_number'
+Started GET "/" for ::1 at 2024-01-09 01:14:04 +0530
+Processing by UserController#index as HTML
+  [1m[36mUser Load (13.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/user_controller.rb:13:in `index'
+Completed 200 OK in 190ms (Views: 107.7ms | ActiveRecord: 53.0ms | Allocations: 21043)
+
+
+Started POST "/new_user" for ::1 at 2024-01-09 01:14:11 +0530
+Processing by UserController#create_user as */*
+  Parameters: {"name"=>"sasi", "phone_number"=>"9600678232", "password"=>"[FILTERED]", "role"=>"admin"}
+Can't verify CSRF token authenticity.
+  [1m[36mRole Pluck (1.5ms)[0m  [1m[34mSELECT `roles`.`role` FROM `roles`[0m
+  ↳ app/models/role.rb:3:in `is_present_role?'
+  [1m[36mRole Load (1.7ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'admin' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:24:in `create_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:31:in `create_user'
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:31:in `create_user'
+  [1m[36mUser Create (7.6ms)[0m  [1m[32mINSERT INTO `users` (`name`, `phone_number`, `password`, `is_active`, `role_id`, `created_at`, `updated_at`) VALUES ('sasi', '9600678232', '1234567890Ba', NULL, 1, '2024-01-08 19:44:11.093113', '2024-01-08 19:44:11.093113')[0m
+  ↳ app/controllers/user_controller.rb:31:in `create_user'
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/user_controller.rb:31:in `create_user'
+Completed 201 Created in 52ms (Views: 0.2ms | ActiveRecord: 17.7ms | Allocations: 11905)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:42 +0530
+  
+SyntaxError (/Users/dalagaruppu/Documents/clone/app/controllers/user_controller.rb:68: syntax error, unexpected end-of-input):
+  
+app/controllers/user_controller.rb:68: syntax error, unexpected end-of-input
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 964)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 690)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 724)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 712)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 709)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 706)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 691)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 703)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 700)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 703)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 718)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 703)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 709)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 694)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 718)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 724)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 703)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 697)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 706)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:53 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 703)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:54 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 717)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:54 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 700)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:54 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 712)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:54 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 712)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:54 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 724)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:54 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 709)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:54 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 709)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:54 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 712)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:54 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 724)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:54 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 688)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:54 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 697)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:54 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 703)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:54 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 718)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:54 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 724)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:55 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 715)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:55 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 718)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:55 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 721)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:55 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 694)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:55 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 712)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:55 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 721)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 735)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 706)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 712)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 718)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 706)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 700)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 706)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 718)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 709)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 712)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 709)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 709)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 706)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 712)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 709)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 712)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 718)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 700)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 703)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:15:56 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 718)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:01 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 705)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:02 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 706)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:02 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 724)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:02 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 709)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:02 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 697)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:02 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 697)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:02 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 706)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:02 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 721)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:02 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 727)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:02 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 709)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:02 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 739)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:02 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 730)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:02 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 706)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:02 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 727)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:02 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 706)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:02 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 712)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:02 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 700)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:02 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 712)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:02 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 727)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:02 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 703)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:20 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 18ms (ActiveRecord: 0.0ms | Allocations: 2867)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:20 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 714)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:20 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 709)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:20 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 694)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:20 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 700)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:20 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 700)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:20 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 697)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:20 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 700)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:21 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 694)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:21 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 697)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:21 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 745)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:21 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 694)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:21 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 706)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:21 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 706)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:21 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 697)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:21 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 718)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:21 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 727)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:21 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 706)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:21 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 706)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:16:21 +0530
+Processing by UserController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :validate_name rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 712)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:20:41 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/user_controller.rb:13:in `index'
+Completed 200 OK in 72ms (Views: 42.0ms | ActiveRecord: 5.2ms | Allocations: 21858)
+
+
+Started GET "/" for ::1 at 2024-01-09 01:25:24 +0530
+Processing by UserController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/user_controller.rb:9:in `index'
+Completed 200 OK in 17ms (Views: 7.1ms | ActiveRecord: 4.6ms | Allocations: 5868)
+
+
+Started POST "/login" for ::1 at 2024-01-09 02:06:39 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/login"):
+  
+Started GET "/" for ::1 at 2024-01-09 02:07:58 +0530
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/user_controller.rb:9:in `index'
+Completed 200 OK in 27ms (Views: 22.8ms | ActiveRecord: 0.8ms | Allocations: 5576)
+
+
+Started POST "/login" for ::1 at 2024-01-09 02:08:06 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/login"):
+  
+Started GET "/login" for ::1 at 2024-01-09 02:08:24 +0530
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+Started POST "/login" for ::1 at 2024-01-09 02:09:05 +0530
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+Started GET "/login" for ::1 at 2024-01-09 02:09:51 +0530
+Processing by UserController#login as */*
+  Parameters: {"phone_number"=>"9600678232", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`phone_number` = '9600678232' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:35:in `login'
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 5.9ms | Allocations: 6984)
+
+
+  
+NoMethodError (undefined method `authenticate' for #<User id: 8, name: "sasi", phone_number: "9600678232", password: [FILTERED], is_active: nil, role_id: 1, created_at: "2024-01-08 14:18:01.782680000 +0000", updated_at: "2024-01-08 14:18:01.782680000 +0000">):
+  
+app/controllers/user_controller.rb:37:in `login'
+Started GET "/login" for ::1 at 2024-01-09 02:11:45 +0530
+Processing by UserController#login as */*
+  Parameters: {"phone_number"=>"9600678232", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms | Allocations: 1081)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/user_controller.rb:35:in `login'
+Started GET "/" for ::1 at 2024-01-09 02:14:04 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UserController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/user_controller.rb:9:in `index'
+Completed 200 OK in 114ms (Views: 43.7ms | ActiveRecord: 6.4ms | Allocations: 22024)
+
+
+Started GET "/login" for ::1 at 2024-01-09 02:14:08 +0530
+Processing by UserController#login as */*
+  Parameters: {"phone_number"=>"9600678232", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`phone_number` = '9600678232' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:35:in `login'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.5ms | Allocations: 2451)
+
+
+  
+NoMethodError (undefined method `password_digest' for #<User id: 8, name: "sasi", phone_number: "9600678232", password: [FILTERED], is_active: nil, role_id: 1, created_at: "2024-01-08 14:18:01.782680000 +0000", updated_at: "2024-01-08 14:18:01.782680000 +0000">):
+  
+app/controllers/user_controller.rb:37:in `login'
+Started GET "/login" for ::1 at 2024-01-09 02:14:41 +0530
+Processing by UserController#login as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`phone_number` IS NULL LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:35:in `login'
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms | Allocations: 980)
+
+
+Started GET "/" for ::1 at 2024-01-09 02:14:41 +0530
+Processing by UserController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/user_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 1160)
+
+
+Started GET "/login" for ::1 at 2024-01-09 02:15:32 +0530
+Processing by UserController#login as */*
+  Parameters: {"phone_number"=>"9361320511", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`phone_number` = '9361320511' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:35:in `login'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.5ms | Allocations: 978)
+
+
+  
+NoMethodError (undefined method `password_digest' for #<User id: 1, name: "Dharunraj", phone_number: "9361320511", password: [FILTERED], is_active: nil, role_id: 2, created_at: "2024-01-07 15:03:43.833685000 +0000", updated_at: "2024-01-07 15:03:43.833685000 +0000">):
+  
+app/controllers/user_controller.rb:37:in `login'
+Started GET "/login" for ::1 at 2024-01-09 02:19:42 +0530
+Processing by UserController#login as */*
+  Parameters: {"phone_number"=>"9361320511", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`phone_number` = '9361320511' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:35:in `login'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`password` = '1234567890Dh' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:38:in `login'
+  [1m[36mRole Load (1.4ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`name` = 'admin' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:40:in `login'
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 7.8ms | Allocations: 8197)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'roles.name' in 'where clause'):
+  
+Started GET "/login" for ::1 at 2024-01-09 02:20:06 +0530
+Processing by UserController#login as */*
+  Parameters: {"phone_number"=>"9361320511", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`phone_number` = '9361320511' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:35:in `login'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`password` = '1234567890Dh' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:38:in `login'
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'admin' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:40:in `login'
+Redirected to http://localhost:3000/
+Completed 302 Found in 37ms (ActiveRecord: 8.1ms | Allocations: 9995)
+
+
+Started GET "/" for ::1 at 2024-01-09 02:20:06 +0530
+Processing by UserController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/user_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.5ms | Allocations: 1235)
+
+
+Started GET "/login" for ::1 at 2024-01-09 02:20:15 +0530
+Processing by UserController#login as */*
+  Parameters: {"phone_number"=>"9361320511", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`phone_number` = '9361320511' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:35:in `login'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`password` = '1234567890Dh' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:38:in `login'
+  [1m[36mRole Load (1.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'admin' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:40:in `login'
+Redirected to http://localhost:3000/
+Completed 302 Found in 28ms (ActiveRecord: 2.6ms | Allocations: 1568)
+
+
+Started GET "/" for ::1 at 2024-01-09 02:20:15 +0530
+Processing by UserController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/user_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms | Allocations: 1161)
+
+
+Started GET "/login" for ::1 at 2024-01-09 02:21:11 +0530
+  
+SyntaxError (/Users/dalagaruppu/Documents/clone/app/controllers/user_controller.rb:41: syntax error, unexpected ':', expecting `end' or dummy end
+            return notice: 'Admin login successful'
+                         ^
+/Users/dalagaruppu/Documents/clone/app/controllers/user_controller.rb:43: syntax error, unexpected ':', expecting `end' or dummy end
+            return notice: 'User login successful'
+                         ^
+):
+  
+app/controllers/user_controller.rb:41: syntax error, unexpected ':', expecting `end' or dummy end
+app/controllers/user_controller.rb:43: syntax error, unexpected ':', expecting `end' or dummy end
+Started GET "/login" for ::1 at 2024-01-09 02:21:48 +0530
+  
+SyntaxError (/Users/dalagaruppu/Documents/clone/app/controllers/user_controller.rb:41: syntax error, unexpected ':', expecting `end' or dummy end
+             notice: 'Admin login successful'
+                   ^
+/Users/dalagaruppu/Documents/clone/app/controllers/user_controller.rb:44: syntax error, unexpected ':', expecting `end' or dummy end
+             notice: 'User login successful'
+                   ^
+):
+  
+app/controllers/user_controller.rb:41: syntax error, unexpected ':', expecting `end' or dummy end
+app/controllers/user_controller.rb:44: syntax error, unexpected ':', expecting `end' or dummy end
+Started GET "/login" for ::1 at 2024-01-09 02:23:40 +0530
+Processing by UserController#login as */*
+  Parameters: {"phone_number"=>"9361320511", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`phone_number` = '9361320511' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:35:in `login'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`password` = '1234567890Dh' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:38:in `login'
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'admin' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:40:in `login'
+Completed 201 Created in 27ms (Views: 0.2ms | ActiveRecord: 7.9ms | Allocations: 8924)
+
+
+Started GET "/" for ::1 at 2024-01-09 02:23:55 +0530
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/user_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 1204)
+
+
+Started GET "/login" for ::1 at 2024-01-09 02:24:34 +0530
+Processing by UserController#login as */*
+  Parameters: {"phone_number"=>"9361320512", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`phone_number` = '9361320512' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:35:in `login'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`password` = '1234567890Mo' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:38:in `login'
+  [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` WHERE `roles`.`role` = 'admin' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:40:in `login'
+Completed 201 Created in 5ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 1344)
+
+
+Started GET "/login" for ::1 at 2024-01-09 02:24:42 +0530
+Processing by UserController#login as */*
+  Parameters: {"phone_number"=>"9361320512", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`phone_number` = '9361320512' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:35:in `login'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`password` = '1234567890M' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:38:in `login'
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 1.0ms | Allocations: 1177)
+
+
+Started GET "/" for ::1 at 2024-01-09 02:24:42 +0530
+Processing by UserController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/user_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 1160)
+
+
+Started GET "/login" for ::1 at 2024-01-09 02:25:54 +0530
+Processing by UserController#login as */*
+  Parameters: {"phone_number"=>"9361320512", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`phone_number` = '9361320512' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:35:in `login'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`password` = '1234567890M' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:38:in `login'
+No template found for UserController#login, rendering head :no_content
+Completed 204 No Content in 25ms (ActiveRecord: 4.5ms | Allocations: 6467)
+
+
+Started GET "/login" for ::1 at 2024-01-09 02:26:29 +0530
+Processing by UserController#login as */*
+  Parameters: {"phone_number"=>"9361320512", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`phone_number` = '9361320512' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:35:in `login'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`password` = '1234567890M' LIMIT 1[0m
+  ↳ app/controllers/user_controller.rb:38:in `login'
+Completed 201 Created in 18ms (Views: 0.2ms | ActiveRecord: 4.9ms | Allocations: 5918)
+
+
+Started GET "/new_user" for ::1 at 2024-01-09 11:48:53 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 3 pending migrations:
+
+db/migrate/20240107074043_create_roles.rb
+db/migrate/20240107084118_create_users.rb
+db/migrate/20240107084347_insert_roles_data.rb
+
+
+):
+  
+activerecord (7.1.2) lib/active_record/migration.rb:754:in `check_pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:643:in `block (2 levels) in call'
+activesupport (7.1.2) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.1.2) lib/active_record/migration.rb:648:in `block in call'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `synchronize'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.1) lib/puma/configuration.rb:272:in `call'
+puma (6.4.1) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.1) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.1) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.1) lib/puma/server.rb:464:in `process_client'
+puma (6.4.1) lib/puma/server.rb:245:in `block in run'
+puma (6.4.1) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/new_user" for ::1 at 2024-01-09 11:49:24 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 3 pending migrations:
+
+db/migrate/20240107074043_create_roles.rb
+db/migrate/20240107084118_create_users.rb
+db/migrate/20240107084347_insert_roles_data.rb
+
+
+):
+  
+activerecord (7.1.2) lib/active_record/migration.rb:754:in `check_pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:643:in `block (2 levels) in call'
+activesupport (7.1.2) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.1.2) lib/active_record/migration.rb:648:in `block in call'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `synchronize'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.1) lib/puma/configuration.rb:272:in `call'
+puma (6.4.1) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.1) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.1) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.1) lib/puma/server.rb:464:in `process_client'
+puma (6.4.1) lib/puma/server.rb:245:in `block in run'
+puma (6.4.1) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/" for ::1 at 2024-01-09 11:52:22 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 3 pending migrations:
+
+db/migrate/20240107074043_create_roles.rb
+db/migrate/20240107084118_create_users.rb
+db/migrate/20240107084347_insert_roles_data.rb
+
+
+):
+  
+activerecord (7.1.2) lib/active_record/migration.rb:754:in `check_pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:643:in `block (2 levels) in call'
+activesupport (7.1.2) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.1.2) lib/active_record/migration.rb:648:in `block in call'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `synchronize'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.1) lib/puma/configuration.rb:272:in `call'
+puma (6.4.1) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.1) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.1) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.1) lib/puma/server.rb:464:in `process_client'
+puma (6.4.1) lib/puma/server.rb:245:in `block in run'
+puma (6.4.1) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/" for ::1 at 2024-01-09 11:52:23 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 3 pending migrations:
+
+db/migrate/20240107074043_create_roles.rb
+db/migrate/20240107084118_create_users.rb
+db/migrate/20240107084347_insert_roles_data.rb
+
+
+):
+  
+activerecord (7.1.2) lib/active_record/migration.rb:754:in `check_pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:643:in `block (2 levels) in call'
+activesupport (7.1.2) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.1.2) lib/active_record/migration.rb:648:in `block in call'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `synchronize'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.1) lib/puma/configuration.rb:272:in `call'
+puma (6.4.1) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.1) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.1) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.1) lib/puma/server.rb:464:in `process_client'
+puma (6.4.1) lib/puma/server.rb:245:in `block in run'
+puma (6.4.1) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('4361666860976504730', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+Migrating to CreateRoles (20240107074043)
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE `roles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `role` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('4361666860976504730')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
-  [1m[35m (23.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS `hotel_management`[0m
-  [1m[35m (2.5ms)[0m  [1m[35mCREATE DATABASE `hotel_management` DEFAULT CHARACTER SET `utf8`[0m
-  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
-  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('4361666860976504730', 0)[0m
-  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
-  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
-  [1m[36mActiveRecord::InternalMetadata Create (2.0ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2024-01-09 08:30:47.595584', '2024-01-09 08:30:47.595587')[0m
+  [1m[35m (27.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS `hotel_management`[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE DATABASE `hotel_management` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('4361666860976504730', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2024-01-09 06:26:45.936616', '2024-01-09 06:26:45.936619')[0m
 Migrating to CreateRoles (20240107074043)
-  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE `roles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `role` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
-  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240107074043')[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE `roles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `role` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240107074043')[0m
 Migrating to CreateUsers (20240107084118)
-  [1m[35m (9.2ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `phone_number` varchar(255), `password` varchar(255), `is_active` tinyint(1), `role_id` bigint NOT NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, INDEX `index_users_on_role_id` (`role_id`), CONSTRAINT `fk_rails_642f17018b`
+  [1m[35m (10.0ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `phone_number` varchar(255), `password` varchar(255), `is_active` tinyint(1), `role_id` bigint NOT NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, INDEX `index_users_on_role_id` (`role_id`), CONSTRAINT `fk_rails_642f17018b`
 FOREIGN KEY (`role_id`)
   REFERENCES `roles` (`id`)
 )[0m
-  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240107084118')[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240107084118')[0m
 Migrating to InsertRolesData (20240107084347)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRole Create (2.4ms)[0m  [1m[32mINSERT INTO `roles` (`role`, `created_at`, `updated_at`) VALUES ('admin', '2024-01-09 06:26:46.030265', '2024-01-09 06:26:46.030265')[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
   [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mRole Create (3.5ms)[0m  [1m[32mINSERT INTO `roles` (`role`, `created_at`, `updated_at`) VALUES ('admin', '2024-01-09 08:30:47.677220', '2024-01-09 08:30:47.677220')[0m
-  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
-  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mRole Create (2.3ms)[0m  [1m[32mINSERT INTO `roles` (`role`, `created_at`, `updated_at`) VALUES ('user', '2024-01-09 08:30:47.686806', '2024-01-09 08:30:47.686806')[0m
-  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
-  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240107084347')[0m
+  [1m[36mRole Create (2.3ms)[0m  [1m[32mINSERT INTO `roles` (`role`, `created_at`, `updated_at`) VALUES ('user', '2024-01-09 06:26:46.038619', '2024-01-09 06:26:46.038619')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240107084347')[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('4361666860976504730')[0m
-  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m

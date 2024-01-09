@@ -1,6 +1,5 @@
 class User < ApplicationRecord
-
-  has_secure_password
+  
   belongs_to :role
 
   validates :name, format: { with: /\A[a-zA-Z]+\z/, message: "only allows letters" }
