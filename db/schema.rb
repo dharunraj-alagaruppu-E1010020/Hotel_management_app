@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_01_07_084347) do
+ActiveRecord::Schema[7.1].define(version: 2024_01_09_125007) do
+  create_table "hotels", charset: "utf8mb3", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_hotels_on_user_id"
+  end
+
   create_table "roles", charset: "utf8mb3", force: :cascade do |t|
     t.string "role"
     t.datetime "created_at", null: false
@@ -28,5 +37,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_07_084347) do
     t.index ["role_id"], name: "index_users_on_role_id"
   end
 
+  add_foreign_key "hotels", "users"
   add_foreign_key "users", "roles"
 end
