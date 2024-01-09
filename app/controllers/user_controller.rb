@@ -1,8 +1,6 @@
 class UserController < ApplicationController
 
-    before_action :validate_name 
-    before_action :validate_phone_number
-    before_action :validate_password
+    before_action :validate,  only: [:create_user]
 
     def index
         user = User.all
@@ -47,22 +45,10 @@ class UserController < ApplicationController
 
     private
 
-    def validate_name
-        rescue RuntimeError => e
-         flash[:error] = e.message
-         redirect_to root_path
+    def validate
+        if params[:name].blank? || params[:phone_number].blank? || params[:password].blank?
+          render json: { message: 'Invalid input, please check mandatory fields' }, status: 400
+        end
     end
-
-    def validate_phone_number
-       rescue RuntimeError => e
-        flash[:error] = e.message
-        redirect_to root_path  
-    end
-
-    def validate_password
-       rescue RuntimeError => e
-        flash[:error] = e.message
-        redirect_to root_path
-    end
-
+      
 end
