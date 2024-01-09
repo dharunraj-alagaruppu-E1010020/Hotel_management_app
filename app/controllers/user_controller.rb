@@ -34,7 +34,6 @@ class UserController < ApplicationController
     def login
         user = User.find_by(phone_number: params[:phone_number])
 
-
       if user && User.find_by(password: params[:password])
 
         if user.role_id == Role.find_by(role: 'admin')&.id
