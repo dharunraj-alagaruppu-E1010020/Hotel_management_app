@@ -17,16 +17,17 @@ class RestaurantController < ApplicationController
 
     private
     def input_validation
-        if params[:name].blank? || params[:description].blank? || params[:user_id].blank?
+        if params[:name].blank? || params[:description].blank? || params[:user_id].blank? || params[:password].blank? 
             render json: { message: 'Defalult field should be filled' }, status: 400
         end
 
         user_id = params[:user_id]
         user_object = User.find_by(id: user_id)
+        password = user_object.password
         role = user_object.role.role
 
-        if role != 'admin'
-           render json: { message: 'Admin can only add the restaurant details' }, status: 400
+        if user_id != params[:user_id] || password != params[:password] || role != 'admin'
+            render json: { message: 'Admin can only add the table details' }, status: 400
         end
     end
 end

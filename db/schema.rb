@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_01_10_061009) do
+ActiveRecord::Schema[7.1].define(version: 2024_01_10_143040) do
   create_table "restaurants", charset: "utf8mb3", force: :cascade do |t|
     t.string "name"
     t.string "description"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "is_active", default: true
     t.index ["user_id"], name: "index_restaurants_on_user_id"
   end
 
@@ -24,6 +25,16 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_10_061009) do
     t.string "role"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "table_restaurants", charset: "utf8mb3", force: :cascade do |t|
+    t.integer "table_number"
+    t.integer "no_of_chairs"
+    t.bigint "restaurant_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.boolean "is_active", default: true
+    t.index ["restaurant_id"], name: "index_table_restaurants_on_restaurant_id"
   end
 
   create_table "users", charset: "utf8mb3", force: :cascade do |t|
@@ -38,5 +49,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_10_061009) do
   end
 
   add_foreign_key "restaurants", "users"
+  add_foreign_key "table_restaurants", "restaurants"
   add_foreign_key "users", "roles"
 end

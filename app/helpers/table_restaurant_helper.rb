@@ -1,0 +1,2 @@
+module TableRestaurantHelper
+end
