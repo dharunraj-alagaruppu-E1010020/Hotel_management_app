@@ -13,13 +13,10 @@ Rails.application.routes.draw do
 
   get 'login', to: 'user#login'
 
-  post 'hotel', to: 'hotel#add_hotel'
-
-  # resources :hotels, path: 'hotel' do
-  #   member do
-  #     post :add_hotel
-  #   end
-  # end
-  
+  resources :restaurant do
+    member do
+      post :add_restaurant 
+    end
+  end
 
 end
