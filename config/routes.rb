@@ -17,6 +17,7 @@ Rails.application.routes.draw do
     member do
       post :add_restaurant 
       get :delete_restaurant
+      get :list_all_restaurant
     end
   end
 
