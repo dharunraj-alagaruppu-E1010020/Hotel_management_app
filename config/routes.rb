@@ -13,4 +13,19 @@ Rails.application.routes.draw do
 
   get 'login', to: 'user#login'
 
+  resources :restaurant do
+    member do
+      post :add_restaurant 
+      get :delete_restaurant
+    end
+  end
+
+  resources :table_restaurant do
+    member do
+      post :add_table
+      get :list_table_available
+    end
+  end
+
+
 end
