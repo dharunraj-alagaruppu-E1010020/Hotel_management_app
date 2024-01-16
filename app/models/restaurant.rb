@@ -16,10 +16,5 @@ class Restaurant < ApplicationRecord
         end
         
     end
-
-    def list_table_available(rest_id)
-        tables = TableRestaurant.where(restaurant_id: rest_id, is_active: true)
-        render json: tables
-    end
-      
+    
 end
