@@ -18,7 +18,7 @@ class TableRestaurantController < ApplicationController
 
     def list_table_available
         tables = TableRestaurant.where(restaurant_id: params[:restaurant_id], is_active: true)
-        render json: tables
+        render json: tables 
     end
 
     private

@@ -21,10 +21,16 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :table_restaurant do
+  resources :table_restaurant, id: '' do
     member do
       post :add_table
       get :list_table_available
+    end
+  end
+
+  resources :table_booking do
+    member do
+      post :book_table
     end
   end
 
