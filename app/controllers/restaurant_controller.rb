@@ -5,9 +5,11 @@ class RestaurantController < ApplicationController
     
     def add_restaurant
         restaurant = Restaurant.new
-        restaurant.name = params[rest_name]
+        restaurant.name = params[:rest_name]
         restaurant.description = params[:rest_description]
         restaurant.user_id = params[:user_id]
+        restaurant.available_start_time = params[:start_time]
+        restaurant.available_end_time = params[:end_time]
 
         if restaurant.save
             render json: { message: 'Hotel is added your restaurant list' }, status: 201 
@@ -23,7 +25,7 @@ class RestaurantController < ApplicationController
 
     private
     def add_restaurant_validation
-        if params[:rest_name].blank? || params[:rest_description].blank? || params[:user_id].blank? || params[:password].blank? 
+        if params[:rest_name].blank? || params[:rest_description].blank? || params[:user_id].blank? || params[:password].blank? || params[:start_time].blank? || params[:end_time].blank?  
             render json: { message: 'Defalult field should be filled' }, status: 400
         end
 
@@ -32,9 +34,12 @@ class RestaurantController < ApplicationController
         password = user_object.password
         role = user_object.role.role
 
-        if user_id != params[:user_id] || password != params[:password] || role != 'admin'
+        if user_object == nil
+            render json: { message: 'Invalid user id and password' }, status: 400
+        elsif user_id != params[:user_id] || password != params[:password] || role != 'admin'
             render json: { message: 'Admin can only add the table details' }, status: 400
         end
+
     end
 
     def list_all_restaurant_validation
@@ -45,7 +50,7 @@ class RestaurantController < ApplicationController
 
         user = User.find_by(id: params[:user_id], password: params[:password])
 
-        if !user
+        if !user 
             render json: { message: 'Invaild user id and password' }, status: 400
         end
 
