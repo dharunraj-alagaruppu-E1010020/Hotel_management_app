@@ -1,8 +1,10 @@
 class TableBookingController < ApplicationController
 
+    BOOKED_STATUS = false
+
      before_action :validate_input_validation,  only: [:book_table]
      before_action :validate_time_validation, only: [:book_table]
-    #  before_action :validate_is_before_booked, only: [:book_table]
+     before_action :validate_cancellation, only: [:cancel_table]
 
     def book_table
 
@@ -22,8 +24,21 @@ class TableBookingController < ApplicationController
         if table_details.save
             render json: { message: 'Table booked successfully' }, status: 201 
         else
-            render json: {errors: restaurant.errors.full_messages}, status: 400
+            render json: {errors: table_details.errors.full_messages}, status: 400
         end
+
+    end
+
+    def cancel_table
+
+       obj =  TableBooking.find(params[:table_booking_id])
+       obj.cancellation = true
+
+       if obj.save
+        render json: { message: 'Table successfully cancelled'}, status: 200
+       else
+        render json: {errors: obj.full_messages}, status: 400
+       end
 
     end
 
@@ -34,7 +49,7 @@ class TableBookingController < ApplicationController
         if params[:restaurant_id].blank?  || params[:table_number].blank? || params[:start_time].blank? || params[:end_time].blank? || params[:user_id].blank? || params[:password].blank?
             render json: { message: 'Please check mandatory fields'}, status: 400 
         elsif params[:start_time] >= params[:end_time]
-            render json: { message: 'Invalid starting time and ending ending '}, status: 400
+            render json: { message: 'Invalid starting time and ending time '}, status: 400
         end
 
         user_id = params[:user_id]
@@ -69,7 +84,7 @@ class TableBookingController < ApplicationController
 
         is_booked = TableBooking.where(
             restaurant_id: rest_id
-          ).where("start_time < ? AND end_time > ?", end_time_stamp, start_time_stamp).exists?          
+          ).where("start_time < ? AND end_time > ? AND cancellation = ?", end_time_stamp, start_time_stamp, BOOKED_STATUS).exists?          
 
         if rest_start_time > start_time || rest_end_time < end_time
           render json: { message: "Check your timeline. Restaurant timeline is: #{rest_obj.available_start_time} to #{rest_obj.available_end_time}" }  
@@ -77,4 +92,25 @@ class TableBookingController < ApplicationController
             render json: { message: "This time line already booked. Can you try another time duration"}
         end
     end
+
+    def validate_cancellation
+        if params[:table_booking_id].blank? || params[:user_id].blank? || params[:password].blank?
+            render json: { message: 'Please check mandatory fields'}, status: 400
+        end
+
+        user_id = params[:user_id]
+        user_object = User.find_by(id: user_id)
+        password = user_object.password
+
+        if user_object == nil || password != params[:password]
+            render json: { message: 'Invalid user id or password' }, status: 400
+        end
+
+        id = TableBooking.find_by(id: params[:table_booking_id], user_id: params[:user_id], cancellation: BOOKED_STATUS)
+
+        if id == nil
+            render json: { message: 'Invalid restaurant id or already cancelled'}, status: 400
+        end
+    end
+
 end

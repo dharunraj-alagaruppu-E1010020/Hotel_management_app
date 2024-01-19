@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   
   belongs_to :role
+  has_many :table_bookings
 
   validates :name, format: { with: /\A[a-zA-Z]+\z/, message: "only allows letters" }
   validates :phone_number, format: { with: /\A\d{10}\z/, message: "should be a 10-digit number" }
