@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   
   belongs_to :role
+  has_many :restaurants
   has_many :table_bookings
   validates_uniqueness_of :phone_number, scope: :role_id
   

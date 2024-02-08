@@ -11,9 +11,17 @@ Rails.application.routes.draw do
 
   get '/roles', to: 'user#list_of_role'
 
-  post 'new_users' , to: 'user#create_user'
+  post '/users' , to: 'user#create_user'
 
-  get 'login', to: 'user#login'
+  post 'login', to: 'user#login'
+
+  post '/restaurants', to: 'restaurant#create'
+
+  get '/restaurants', to: 'restaurant#index'
+
+  get '/restaurants/:id', to: 'restaurant#show'
+
+  put '/restaurants/:id', to: 'restaurant#update'
 
   resources :user do
     member do
@@ -23,9 +31,10 @@ Rails.application.routes.draw do
   
   resources :restaurant do
     member do
-      post :add_restaurant 
+      get :list_of_restaurant 
+      get :show
+      put :update
       get :delete_restaurant
-      get :list_all_restaurant
     end
   end
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_01_19_061716) do
+ActiveRecord::Schema[7.1].define(version: 2024_02_02_123926) do
   create_table "restaurants", charset: "utf8mb3", force: :cascade do |t|
     t.string "name"
     t.string "description"
@@ -24,7 +24,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_19_061716) do
   end
 
   create_table "roles", charset: "utf8mb3", force: :cascade do |t|
-    t.string "role"
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

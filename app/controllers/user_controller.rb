@@ -1,20 +1,20 @@
 class UserController < ApplicationController
 
   before_action :validate_index, only: [:index]
-  before_action :validate,  only: [:create_user]
-  before_action :user_validate, only: [:login]
+  before_action :validate_create_user,  only: [:create_user]
+  before_action :validate_login, only: [:login]
   before_action :validate_history, only: [:history]
   
   def index
     page_no = params[:page_no]
-    split = 2
+    split = 3
     skip_record = (page_no - 1) * split
 
     user = User.limit(split).offset(skip_record)
     total = User.count
     next_page = (split * page_no) < total ? true : false
 
-    render json: { data: user , meta: {
+    render json: { users: user , meta: {
       next_page: next_page,
       total_records: total,
       requested_page_no: page_no }} 
@@ -22,11 +22,10 @@ class UserController < ApplicationController
 
   def create_user
     user = User.new
-    user.name = params[:name]
-    user.phone_number = params[:phone_number]
-    user.password = params[:password]
-    user.role_id  = params[:role_id]
-
+    user.name = params[:user][:name]
+    user.phone_number = params[:user][:phone_number]
+    user.password = params[:user][:password]
+    user.role_id  = params[:user][:role_id]
     if user.save 
       render json: { message: 'Entry created successfully' }, status: 201
     else
@@ -35,16 +34,13 @@ class UserController < ApplicationController
   end
 
   def login
-    user = User.find_by(phone_number: params[:phone_number], password: params[:password])
-    if user
-      if user.role.role == 'admin'
-        render json: { message: 'Admin login successful' }, status: :ok
-      else
-        render json: { message: 'User login successful' }, status: :ok
+    
+      if @user_obj.role.name == 'admin'
+        render json: { role: 'admin' ,  user_obj: @user_obj }, status: :ok
+      elsif @user_obj.role.name == 'user'
+        render json: { role: 'user' , user_obj: @user_obj }, status: :ok
       end
-    else
-      render json: { message: ' Invalid phone number or password' }, status: :unprocessable_entity
-    end
+
   end
 
   def history
@@ -58,18 +54,31 @@ class UserController < ApplicationController
 
   def list_of_role
     role = Role.all
-    render json: { roles: role }
+    render json: {roles: role }
   end
 
   private
 
-  def validate
+  def validate_create_user
+    if params[:user][:phone_number].blank? || params[:user][:password].blank? || params[:user][:role_id].blank?
+      render json: { message: 'Invalid input, please check mandatory fields' }, status: 400
+    end
+    role_obj = Role.find_by(id: params[:user][:role_id])
+  
+    if role_obj == nil || role_obj.id != params[:user][:role_id].to_i
+      render json: { message: 'Invalid role, please check role fields' }, status: 400
+    end
+  end
+
+  def validate_login
     if params[:phone_number].blank? || params[:password].blank? || params[:role_id].blank?
       render json: { message: 'Invalid input, please check mandatory fields' }, status: 400
     end
-    role_exists = Role.find_by(id: params[:role_id])
-    if role_exists == nil
-      render json: { message: 'Invalid role, please check role fields' }, status: 400
+    
+    @user_obj = User.find_by(phone_number: params[:phone_number], password: params[:password], role_id: params[:role_id])
+
+    if @user_obj == nil
+      render json: { message: 'Please check your credentials' }, status: 400
     end
   end
 
@@ -81,6 +90,9 @@ class UserController < ApplicationController
   end
 
   def validate_index
+    if params[:page_no] == nil
+      params[:page_no] = 1 
+    end
     if params[:page_no] < 1
       render json: { message: "Page number start by 1"}
     end

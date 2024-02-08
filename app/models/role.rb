@@ -1,6 +1,6 @@
 class Role < ApplicationRecord
 
-  has_many :user
+  has_many :users
 
   def self.is_present_role?(role_define)
     role_define = role_define.downcase

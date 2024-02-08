@@ -3,6 +3,7 @@ class Restaurant < ApplicationRecord
   self.table_name = 'restaurants'
 
   belongs_to :user
+  has_many :table_restaurants
   has_many :table_bookings
 
   def delete_restaurant(restaurant_id)
