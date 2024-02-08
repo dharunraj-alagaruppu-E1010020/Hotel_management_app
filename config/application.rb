@@ -23,6 +23,15 @@ module Hotel
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras") 
-    config.autoloader = :classic  
-  end
+    config.autoloader = :classic
+    config.autoload_paths += Dir["#{config.root}/app/**/"]
+
+    # Enable the middleware for handling Cross-Origin Resource Sharing (CORS)
+    # config.middleware.insert_before 0, Rack::Cors do
+    #   allow do
+    #     origins '*' # You can specify your allowed origins here
+    #     resource '*', headers: :any, methods: [:get, :post, :put, :patch, :delete, :options, :head]
+    #   end
+    # end
+end
 end
