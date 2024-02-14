@@ -31,6 +31,11 @@ default: &default
   password: 12345678
   host: 127.0.0.1
   port: 3306
+  
 development:
+  <<: *default
+  database: hotel_management
+
+test:
   <<: *default
   database: hotel_management

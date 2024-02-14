@@ -1,9 +1,10 @@
 class RestaurantController < ApplicationController
-
+  
   before_action :create_validation,  only: [:create]
   before_action :show_validation, only: [:show]
   before_action :list_of_restaurant_validation, only: [:list_of_restaurant]
   before_action :update_validation, only: [:update]
+  before_action :destroy_validation, only: [:destroy]
 
   def index
     restaurant_details = Restaurant.all
@@ -11,14 +12,14 @@ class RestaurantController < ApplicationController
   end
 
   def show
-    render json: {restaurant: @restaurant_obj}
+    render json: {restaurant: @restaurant_obj}, status: 200
   end
 
   def list_of_restaurant
     restaurants = Restaurant.where(user_id: params[:id], is_active: true)
-    render json: {restaurants: restaurants}
-    # total_records = restaurants.count
-    # render json: {restaurants: restaurants, count: total_records}
+    # render json: {restaurants: restaurants}
+    total_records = restaurants.count
+    render json: { restaurants: restaurants , count: total_records }
   end
 
   def create
@@ -47,6 +48,14 @@ class RestaurantController < ApplicationController
     end
   end
 
+  def destroy
+    @restaurant_obj.is_active = false
+    if @restaurant_obj.save
+      render json: { message: 'Hotel delete succssfully ' }, status: 200
+    else
+      render json: {errors: restaurant.errors.full_messages}, status: 400
+    end
+  end
 
   private
 
@@ -72,9 +81,15 @@ class RestaurantController < ApplicationController
   end
 
   def show_validation
-    render json: { message: "Restaurant id or User id is missing "} if params[:id].blank? 
-    @restaurant_obj = Restaurant.find(params[:id])
-    render json: { message: "Admin only can edit that details"}  if @restaurant_obj == nil
+    
+    render json: { message: "Restaurant id is missing "}, status: 400 if params[:id].blank? || params[:id].nil?
+
+    begin
+      @restaurant_obj = Restaurant.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      render json: { message: "Restaurant not found" }, status: 404
+    end
+
   end
 
   def list_of_restaurant_validation
@@ -82,10 +97,15 @@ class RestaurantController < ApplicationController
   end
 
   def update_validation
-    puts params[:id].blank?
     render json: {message: 'Defalult field should be filled'} if params[:id].blank? || params[:restaurant][:name].blank? || params[:restaurant][:description].blank?
     @restaurant_obj = Restaurant.find(params[:id])
     render json: {message: 'Invalid details'} if @restaurant_obj == nil
+  end
+
+  def destroy_validation
+    render json: {message: 'Please check restauran id'} if params[:id].blank? 
+    @restaurant_obj = Restaurant.find(params[:id])
+    render json: {message: 'Invalid restaurant id details'}, status: 400 if @restaurant_obj == nil
   end
 
 end

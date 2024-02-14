@@ -68,7 +68,13 @@ class TableBookingController < ApplicationController
       restaurant_id: params[:restaurant_id],
       table_restaurant_id: params[:table_number]
     )
-    .where("start_time < ? AND end_time < ? AND cancellation = ?", end_time, start_time, BOOKED_STATUS).exists?
+    .where(
+      "(start_time >= ? AND start_time < ?) OR (end_time > ? AND end_time <= ?) OR (start_time <= ? AND end_time >= ?)",
+      end_time, start_time,
+      start_time, end_time,
+      start_time, end_time
+    )
+    .exists?
     
     if rest_start_time > start_strftime || rest_end_time < end_strftime
       render json: { message: "Check your timeline. Restaurant timeline is mismatch" }  

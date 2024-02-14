@@ -1,13 +1,13 @@
 class UserController < ApplicationController
 
   before_action :validate_index, only: [:index]
-  before_action :validate_create_user,  only: [:create_user]
+  # before_action :validate_create_user,  only: [:create_user]
   before_action :validate_login, only: [:login]
   before_action :validate_history, only: [:history]
   
   def index
-    page_no = params[:page_no]
-    split = 3
+    page_no = params[:page_no].to_i
+    split = 5
     skip_record = (page_no - 1) * split
 
     user = User.limit(split).offset(skip_record)
@@ -17,7 +17,7 @@ class UserController < ApplicationController
     render json: { users: user , meta: {
       next_page: next_page,
       total_records: total,
-      requested_page_no: page_no }} 
+      requested_page_no: page_no }}, status: 200
   end
 
   def create_user
@@ -34,13 +34,11 @@ class UserController < ApplicationController
   end
 
   def login
-    
-      if @user_obj.role.name == 'admin'
-        render json: { role: 'admin' ,  user_obj: @user_obj }, status: :ok
-      elsif @user_obj.role.name == 'user'
-        render json: { role: 'user' , user_obj: @user_obj }, status: :ok
-      end
-
+    if @user_obj.role.name == 'admin'
+      render json: { role: 'admin' ,  user_obj: @user_obj }, status: :ok
+    elsif @user_obj.role.name == 'user'
+      render json: { role: 'user' , user_obj: @user_obj }, status: :ok
+    end
   end
 
   def history
@@ -90,10 +88,10 @@ class UserController < ApplicationController
   end
 
   def validate_index
-    if params[:page_no] == nil
-      params[:page_no] = 1 
+    if params[:page_no].to_i == nil
+      params[:page_no] = 1
     end
-    if params[:page_no] < 1
+    if params[:page_no].to_i < 1
       render json: { message: "Page number start by 1"}
     end
   end
