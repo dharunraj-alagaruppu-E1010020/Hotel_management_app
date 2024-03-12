@@ -19,9 +19,11 @@ Rails.application.routes.draw do
 
   get '/restaurants', to: 'restaurant#index'
 
-  get '/restaurants/:id', to: 'restaurant#show'
+  get '/restaurants/:id', to: 'restaurant#show', id: /[a-zA-Z0-9]+/
 
   put '/restaurants/:id', to: 'restaurant#update'
+
+  delete '/restaurants/:id', to: 'restaurant#destroy'
 
   resources :user do
     member do
