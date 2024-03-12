@@ -78,3 +78,13 @@ group :test do
 end
 
 gem 'simplecov', require: false, group: :test
+
+gem 'sidekiq'
+
+gem 'factory_girl_rails'
+
+gem 'faker'
+
+gem "vcr"
+
+gem "webmock"

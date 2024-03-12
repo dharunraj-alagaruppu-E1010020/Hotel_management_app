@@ -1,19 +1,18 @@
 class UserController < ApplicationController
 
-  before_action :validate_index, only: [:index]
-  # before_action :validate_create_user,  only: [:create_user]
+  # before_action :validate_index, only: [:index]
+  before_action :validate_create_user,  only: [:create_user]
   before_action :validate_login, only: [:login]
   before_action :validate_history, only: [:history]
-  
-  def index
-    page_no = params[:page_no].to_i
+
+  def index 
+    page_no = 1
     split = 5
     skip_record = (page_no - 1) * split
 
     user = User.limit(split).offset(skip_record)
     total = User.count
     next_page = (split * page_no) < total ? true : false
-
     render json: { users: user , meta: {
       next_page: next_page,
       total_records: total,
@@ -58,6 +57,7 @@ class UserController < ApplicationController
   private
 
   def validate_create_user
+    byebug
     if params[:user][:phone_number].blank? || params[:user][:password].blank? || params[:user][:role_id].blank?
       render json: { message: 'Invalid input, please check mandatory fields' }, status: 400
     end
@@ -95,5 +95,5 @@ class UserController < ApplicationController
       render json: { message: "Page number start by 1"}
     end
   end
-      
-end
+
+end   

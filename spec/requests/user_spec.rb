@@ -22,12 +22,37 @@ RSpec.describe "User", type: :request do
 
     context "with invalid parameters" do
       let(:invalid_params) { { user: { name: "", phone_number: "1234567890", password: "", role_id: nil } } }
+      # let(:invalid_params) { FactoryBot.attributes_for(:user, name: "") }
       
       it "returns a bad request response" do
         post "/users", params: invalid_params
         expect(response).to have_http_status(400)
         expect(JSON.parse(response.body)['errors']).to_not be_empty
+        # puts response.inspect
       end
+    end
+
+    context "Valid user object using factorygirl build" do
+      it 'has a valid factory' do
+        user_obj = FactoryGirl.build(:user)
+        expect(user_obj).to be_valid
+      end
+    end
+
+    context "Valid user object using factorygirl create" do
+      it 'has a valid factory' do
+        user_obj = FactoryGirl.create(:user)
+        expect(user_obj).to be_valid
+      end
+    end
+  end
+end
+
+# model level
+describe Role do
+  describe '#check' do 
+    it 'returns should be true' do
+      expect(Role.check()).to be true
     end
   end
 end
